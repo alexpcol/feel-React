@@ -15,13 +15,13 @@ class Walkthrough extends Component {
   render() {
     return (
       <AppContainer
-      containerBackgroundColor={colors.purple}
+      containerBackgroundColor={colors.cadetBlue}
       >
-        <LinearGradient colors={['#4c669f', '#3b5998', '#192f6a']} style={styles.linearGradient}>
-            <Text style={styles.buttonText}>
-                Sign in with Facebook
-            </Text>
-        </LinearGradient>
+        <View style={{flex:1, backgroundColor:'red', flexDirection:'column', justifyContent:'space-between'}}>
+          <Text>Hello</Text>
+          <Text>Hello</Text>
+
+        </View>
       </AppContainer>
       
     );

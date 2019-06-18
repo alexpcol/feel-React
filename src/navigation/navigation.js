@@ -5,15 +5,13 @@ import DemoScreen from '../screens/DemoScreen'
 const AppNavigator = createStackNavigator({
     Walkthrough: {
         screen: Walkthrough,
-        navigationOptions: {
-            header: null,
-        }
     },
     DemoScreen: {
         screen: DemoScreen,
     }
 }, {
-    initialRouteName: 'Walkthrough'
+    initialRouteName: 'DemoScreen',
+    headerMode:'none',
 });
 
 export default createAppContainer(AppNavigator);
