@@ -4,9 +4,10 @@
 
 const colors = {
     alabasterWhite: '#EAEEF0',
-    eerieBlack: '#1C1C1C',
-    deepChestnutRed: '#B44145',
-    purple: '#6E43A2',
+    linkWater: '#BFCAD9',
+    cadetBlue: '#A5AABF',
+    eastBay: '#4B4876',
+    cornFlowerBlue: '464271',
 };
 
 export { colors };
