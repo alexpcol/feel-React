@@ -2,7 +2,6 @@ import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 import AppIntroSlider from 'react-native-app-intro-slider';
 import LinearGradient from 'react-native-linear-gradient';
-import { BlurView } from "@react-native-community/blur";
 import {colors} from '../styles/colors'
 
 export default class App extends React.Component {
@@ -10,23 +9,13 @@ export default class App extends React.Component {
     super(props);
     this.state = {
       showRealApp: false,
-      //To show the main page of the app
     };
   }
   _onDone = () => {
-    // After user finished the intro slides. Show real app through
-    // navigation or simply by controlling state
-    this.setState({ showRealApp: true });
-  };
-  _onSkip = () => {
-    // After user skip the intro slides. Show real app through
-    // navigation or simply by controlling state
-    this.setState({ showRealApp: true });
+    this.props.navigation.navigate('DemoScreen');
   };
   render() {
-    //If false show the Intro Slides
     if (this.state.showRealApp) {
-      //Real Application
       return (
         <View
           style={{
@@ -42,9 +31,7 @@ export default class App extends React.Component {
         </View>
       );
     } else {
-      //Intro slides
       return (
-
         <LinearGradient
           style={[styles.mainContent, {
             flex: 1
@@ -54,11 +41,7 @@ export default class App extends React.Component {
         >      
             <AppIntroSlider
               slides={slides}
-              //comming from the JsonArray below
               onDone={this._onDone}
-              //Handler for the done On last slide
-              showSkipButton={true}
-              onSkip={this._onSkip}
             />
           </LinearGradient>
       );

@@ -3,11 +3,11 @@ import { Text, View, TouchableOpacity, Image } from 'react-native';
 
 
 //Make a component
-const Header = ({ headerText, headerBackgroundColor }) => {
+const Header = ({ headerText, headerBackgroundColor, navigation }) => {
     const { textStyle, viewStyle } = styles;
     return (
         <View style={[viewStyle, { backgroundColor: headerBackgroundColor }]}>
-            <TouchableOpacity style={styles.iconWrapper}>
+            <TouchableOpacity style={styles.iconWrapper} onPress={() => navigation.goBack(null)} >
                 <Image source={require('../../../assets/icons/arrowleftcp.png')} style={styles.icon} resizeMode="contain" />
             </TouchableOpacity>
             <Text style={textStyle}>{headerText}</Text>

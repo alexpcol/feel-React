@@ -10,7 +10,7 @@ const AppNavigator = createStackNavigator({
         screen: DemoScreen,
     }
 }, {
-    initialRouteName: 'DemoScreen',
+    initialRouteName: 'Walkthrough',
     headerMode:'none',
 });
 
