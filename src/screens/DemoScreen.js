@@ -16,10 +16,15 @@ class Walkthrough extends Component {
     return (
       <AppContainer
       containerBackgroundColor={colors.cadetBlue}
+      headerText="Hello"
       >
-        <View style={{flex:1, backgroundColor:'red', flexDirection:'column', justifyContent:'space-between'}}>
+        <View style={{flex:1, backgroundColor:'red' ,flexDirection:'column', justifyContent:'space-between'}}>
           <Text>Hello</Text>
           <Text>Hello</Text>
+          <View style={{backgroundColor:'green', flexDirection:'row', justifyContent:'space-between'}}>
+              <Text>Hello</Text>
+              <Text>Hello</Text>
+          </View>
 
         </View>
       </AppContainer>
