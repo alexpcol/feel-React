@@ -1,24 +1,28 @@
 import { createStackNavigator, createAppContainer } from "react-navigation";
 import Walkthrough from '../screens/Walkthrough'
-import DemoScreen from '../screens/DemoScreen'
+import LoginScreen from '../screens/Login'
+import HomeScreen from '../screens/Home'
 
 const AppNavigator = createStackNavigator({
-    DemoScreen: {
-        screen: DemoScreen,
+  HomeScreen: {
+        screen: HomeScreen,
     }
 }, {
-    initialRouteName: 'DemoScreen',
+    initialRouteName: 'HomeScreen',
     headerMode:'none',
 });
 
 const RootStack = createStackNavigator(
     {
       Main: {
-        screen: AppNavigator,
+        screen: LoginScreen,
       },
       Walkthrough: {
         screen: Walkthrough,
       },
+      Home: {
+        screen: AppNavigator
+      }
     },
     {
       mode: 'modal',

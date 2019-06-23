@@ -8,6 +8,7 @@ const colors = {
     cadetBlue: '#A5AABF',
     eastBay: '#4B4876',
     cornFlowerBlue: '464271',
+    gray:'#606060',
 };
 
 export { colors };

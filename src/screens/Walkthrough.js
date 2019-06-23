@@ -2,10 +2,11 @@ import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 import AppIntroSlider from 'react-native-app-intro-slider';
 import LinearGradient from 'react-native-linear-gradient';
-import {colors} from '../styles/colors'
-import RealmManager from '../services/realm/realm';
+import { connect } from 'react-redux';
+import { walktroughSeen } from '../actions/app'
+import { colors } from '../styles/colors'
 
-export default class App extends React.Component {
+class Walkthrough extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -13,10 +14,7 @@ export default class App extends React.Component {
     };
   }
   _onDone = () => {
-    RealmManager.update('AppConfig',{
-      id:17,
-      showWalkthrough: false
-    })
+    this.props.walktroughSeen()
     this.props.navigation.goBack()
   };
   render() {
@@ -53,6 +51,16 @@ export default class App extends React.Component {
     }
   }
 }
+
+function mapStateToProps(state) {
+  return {
+    promotions: state.promotions.promotions
+  };
+}
+export default connect(mapStateToProps, {
+  walktroughSeen,
+})(Walkthrough);
+
 const styles = StyleSheet.create({
   image: {
     width: 200,

@@ -1,15 +1,16 @@
-/* eslint-disable no-console */
 import {
   RESET,
   SET_CONNECTION_STATUS,
   LOADING,
   NETWORK_ERROR,
   REQUEST_ERROR,
+  SHOW_WALKTHROUGH,
 } from '../actions/types';
 
 const INITIAL_STATE = {
   isConnected: true,
   loading: false,
+  showWalkthrough: false
 };
 
 export default function (state = INITIAL_STATE, action) {
@@ -22,6 +23,10 @@ export default function (state = INITIAL_STATE, action) {
 
     case LOADING: {
       return { ...state, loading: action.payload };
+    }
+
+    case SHOW_WALKTHROUGH: {
+      return { ...state, showWalkthrough: action.payload}
     }
 
     case NETWORK_ERROR: {

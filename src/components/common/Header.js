@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, TouchableOpacity, Image, StyleSheet } from 'react-native';
 
 //Make a component
-const Header = ({ headerText, headerBackgroundColor, navigation , showBackArrow }) => {
+const Header = ({ headerText, headerBackgroundColor, navigation , showBackArrow, headerTextColor }) => {
     const { textStyle, viewStyle } = styles;
     if (showBackArrow) {
         return (
@@ -10,7 +10,7 @@ const Header = ({ headerText, headerBackgroundColor, navigation , showBackArrow 
                 <TouchableOpacity style={styles.iconWrapper} onPress={() => navigation.goBack(null)} >
                     <Image source={require('../../../assets/icons/arrowleftcp.png')} style={styles.icon} resizeMode="contain" />
                 </TouchableOpacity>
-                <Text style={textStyle}>{headerText}</Text>
+                <Text style={[textStyle, {color:headerTextColor}]}>{headerText}</Text>
                 <TouchableOpacity style={styles.iconWrapper}>
                     {/* <Image source={require('../../assets/icons/menucp.png')} style={styles.icon} resizeMode="contain" /> */}
                 </TouchableOpacity>
@@ -23,7 +23,7 @@ const Header = ({ headerText, headerBackgroundColor, navigation , showBackArrow 
                 <TouchableOpacity style={styles.iconWrapper} onPress={() => {}} >
                     {/* <Image source={require('../../../assets/icons/arrowleftcp.png')} style={styles.icon} resizeMode="contain" /> */}
                 </TouchableOpacity>
-                <Text style={textStyle}>{headerText}</Text>
+                <Text style={[textStyle, {color:headerTextColor}]}>{headerText}</Text>
                 <TouchableOpacity style={styles.iconWrapper}>
                     {/* <Image source={require('../../assets/icons/menucp.png')} style={styles.icon} resizeMode="contain" /> */}
                 </TouchableOpacity>

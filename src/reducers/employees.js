@@ -13,7 +13,6 @@ export default (state = INITIAL_STATE, { type, payload } = {}) => {
     case LIST_EMPLOYEES:
       return {
         ...state,
-        employees: state.employees.concat(payload.results),
       };
     
     case RESET:

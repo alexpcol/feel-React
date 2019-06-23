@@ -4,7 +4,7 @@ import RealmManager from '../services/realm/realm';
 import { AppContainer } from '../components/common';
 import { colors } from '../styles/colors';
 
-class Login extends Component {
+class HomeScreen extends Component {
 
   componentDidMount() {
     // RealmManager.update('AppConfig',{
@@ -49,7 +49,7 @@ class Login extends Component {
   }
 }
 
-export default Login;
+export default HomeScreen;
 
 const styles = StyleSheet.create({
   container: {
