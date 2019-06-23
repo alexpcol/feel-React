@@ -3,6 +3,7 @@ import { StyleSheet, View, Text } from 'react-native';
 import AppIntroSlider from 'react-native-app-intro-slider';
 import LinearGradient from 'react-native-linear-gradient';
 import {colors} from '../styles/colors'
+import RealmManager from '../services/realm/realm';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -12,7 +13,11 @@ export default class App extends React.Component {
     };
   }
   _onDone = () => {
-    this.props.navigation.navigate('DemoScreen');
+    RealmManager.update('AppConfig',{
+      id:17,
+      showWalkthrough: false
+    })
+    this.props.navigation.goBack()
   };
   render() {
     if (this.state.showRealApp) {

@@ -7,10 +7,10 @@ import { colors } from '../styles/colors';
 class Login extends Component {
 
   componentDidMount() {
-    RealmManager.update('AppConfig',{
-      id:17,
-      showWalkthrough: false
-    })
+    // RealmManager.update('AppConfig',{
+    //   id:17,
+    //   showWalkthrough: true
+    // })
 
     RealmManager.get('AppConfig', (object) => {
       let config = Array.from(object)[0]
