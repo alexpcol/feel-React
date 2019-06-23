@@ -1,25 +1,40 @@
 import React from 'react';
-import { Text, View, TouchableOpacity, Image } from 'react-native';
-
+import { Text, View, TouchableOpacity, Image, StyleSheet } from 'react-native';
 
 //Make a component
-const Header = ({ headerText, headerBackgroundColor, navigation }) => {
+const Header = ({ headerText, headerBackgroundColor, navigation , showBackArrow }) => {
     const { textStyle, viewStyle } = styles;
-    return (
-        <View style={[viewStyle, { backgroundColor: headerBackgroundColor }]}>
-            <TouchableOpacity style={styles.iconWrapper} onPress={() => navigation.goBack(null)} >
-                <Image source={require('../../../assets/icons/arrowleftcp.png')} style={styles.icon} resizeMode="contain" />
-            </TouchableOpacity>
-            <Text style={textStyle}>{headerText}</Text>
-            <TouchableOpacity style={styles.iconWrapper}>
-                {/* <Image source={require('../../assets/icons/menucp.png')} style={styles.icon} resizeMode="contain" /> */}
-            </TouchableOpacity>
-        </View>
-
-    );
+    if (showBackArrow) {
+        return (
+            <View style={[viewStyle, { backgroundColor: headerBackgroundColor }]}>
+                <TouchableOpacity style={styles.iconWrapper} onPress={() => navigation.goBack(null)} >
+                    <Image source={require('../../../assets/icons/arrowleftcp.png')} style={styles.icon} resizeMode="contain" />
+                </TouchableOpacity>
+                <Text style={textStyle}>{headerText}</Text>
+                <TouchableOpacity style={styles.iconWrapper}>
+                    {/* <Image source={require('../../assets/icons/menucp.png')} style={styles.icon} resizeMode="contain" /> */}
+                </TouchableOpacity>
+            </View>
+    
+        );
+    } else {
+        return (
+            <View style={[viewStyle, { backgroundColor: headerBackgroundColor }]}>
+                <TouchableOpacity style={styles.iconWrapper} onPress={() => {}} >
+                    {/* <Image source={require('../../../assets/icons/arrowleftcp.png')} style={styles.icon} resizeMode="contain" /> */}
+                </TouchableOpacity>
+                <Text style={textStyle}>{headerText}</Text>
+                <TouchableOpacity style={styles.iconWrapper}>
+                    {/* <Image source={require('../../assets/icons/menucp.png')} style={styles.icon} resizeMode="contain" /> */}
+                </TouchableOpacity>
+            </View>
+    
+        );
+    }
+    
 };
 
-const styles = {
+const styles = StyleSheet.create ({
     textStyle: {
         fontSize: 23,
     },
@@ -40,7 +55,7 @@ const styles = {
         height: 24,
         marginLeft: 16
       },
-};
+});
 // Justify-content: its for the vertical axis! flex-start, center, flex-end
 // alignItems: its for the horizontal axis! flex-start, center, flex-end
 //Make the component available to other parts of the app   backgroundColor: '#F8F8F8',

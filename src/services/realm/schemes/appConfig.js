@@ -3,7 +3,7 @@ const Schema = {
     primaryKey: 'id',
     properties: {
         id: 'int',
-        showWalkthrough: 'boolean',
+        showWalkthrough: 'bool',
     }
 };
 

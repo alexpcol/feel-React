@@ -7,7 +7,9 @@ const AppContainer = ({ children,
     containerBackgroundColor,
     headerBackgroundColor,
     headerText,
-    showHeader = true, navigation}) => {
+    showHeader = true, 
+    navigation,
+    showBackArrow = false}) => {
     if (showHeader) {
         return (
             <View style={{ backgroundColor: containerBackgroundColor, flex: 1 }}>
@@ -15,7 +17,7 @@ const AppContainer = ({ children,
                     backgroundColor={headerBackgroundColor}
                     barStyle="light-content"
                 />
-                <Header headerText={headerText} headerBackgroundColor={headerBackgroundColor} navigation={navigation}/>
+                <Header headerText={headerText} headerBackgroundColor={headerBackgroundColor} navigation={navigation} showBackArrow={showBackArrow}/>
                 <SafeAreaView style={{ marginHorizontal: 8, marginTop: 8, backgroundColor: containerBackgroundColor, flex: 1 }}>
                     {children}
                 </SafeAreaView>

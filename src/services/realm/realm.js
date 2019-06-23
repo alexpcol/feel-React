@@ -1,10 +1,8 @@
 import Realm from 'realm';
-import Session from './session';
-import Comic from './comic';
-import Character from './character'
+import AppConfig from './schemes/appConfig'
 
 function realmHandler (callback) {
-    Realm.open({schema: [Session, Comic, Character]})
+    Realm.open({schema: [AppConfig]})
     .then(callback)
 }
 
@@ -15,6 +13,13 @@ function add(type, data) {
         })  
     })
 }
+function update(type, data) {
+    realmHandler((realm) => {
+        realm.write(() => {
+            realm.create(type, data, true);
+        })  
+    })
+}
 
 function get(type, callback) {
     realmHandler((realm) => {
@@ -22,20 +27,9 @@ function get(type, callback) {
     })
 }
 
-function addListener(type, callback) {
-    realmHandler((realm) => {
-        realm.objects(type).addListener(callback);
-    })
-}
-function removeListeners(type){
-    realmHandler((realm) =>{
-        realm.removeAllListeners();
-    })
-}
 export default {
     realmHandler,
     add,
+    update,
     get,
-    addListener,
-    removeListeners,
 }    

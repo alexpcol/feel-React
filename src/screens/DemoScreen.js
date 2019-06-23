@@ -1,17 +1,25 @@
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View, TouchableOpacity} from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity} from 'react-native';
+import RealmManager from '../services/realm/realm';
 import { AppContainer } from '../components/common';
-import { colors } from '../styles/colors'
-import LinearGradient from 'react-native-linear-gradient';
+import { colors } from '../styles/colors';
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
+class Login extends Component {
 
-class Walkthrough extends Component {
+  componentDidMount() {
+    RealmManager.update('AppConfig',{
+      id:17,
+      showWalkthrough: false
+    })
+
+    RealmManager.get('AppConfig', (object) => {
+      let config = Array.from(object)[0]
+      console.log(config.showWalkthrough)
+      if (config.showWalkthrough) {
+        this.props.navigation.navigate('Walkthrough');
+      }
+    })
+  }
 
   navigateToDetail = () => {
     this.props.navigation.navigate('Walkthrough');
@@ -41,7 +49,7 @@ class Walkthrough extends Component {
   }
 }
 
-export default Walkthrough;
+export default Login;
 
 const styles = StyleSheet.create({
   container: {
