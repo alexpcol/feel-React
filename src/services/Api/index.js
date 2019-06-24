@@ -1,6 +1,7 @@
 import { SERVER_ERROR, LOGOUT_USER, NETWORK_ERROR, REQUEST_ERROR } from '../../actions/types';
 import auth from './auth';
 import deepAffect from './deepAffects';
+import spotify from './spotify';
 
 
 function handleError(type, dispatch) {
@@ -33,5 +34,6 @@ function handleError(type, dispatch) {
 export default {
   handleError,
   auth,
-  deepAffect
+  deepAffect,
+  spotify
 };

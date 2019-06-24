@@ -14,3 +14,6 @@ export const AUTHORIZATION_ERROR = 'authorization_error';
 
 // Survey Actions
 export const QUESTION_ANSWERED = "question_answered";
+
+// Survey Actions
+export const SEARCH_PLAYLIST = "search_playlist"

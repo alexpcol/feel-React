@@ -75,6 +75,11 @@ async function httpRequest(request) {
     headers['apiKey'] = request.config.apiKey
   }
 
+  if (!request.config.emotion && !request.config.auth) {
+    console.log('[HTTP][Request] Set search headers');
+    headers['Authorization'] = await getAuthorizationToken()
+  }
+
   if (request.config.auth) {
     try {
       console.log(`[HTTP][Request] ${request.url}`);
@@ -116,6 +121,15 @@ async function httpRequest(request) {
       return errorHandler(e);
     }
   }
+}
+
+async function getAuthorizationToken() {
+  console.log('[Auth] getAuthorizationToken');
+  let lol = await RealmManager.get('Session', (object) => {
+    let session = Array.from(object)[0]
+    return `Bearer ${session.token}`
+  })
+  console.log(lol)
 }
 
 function post(url, data, config = {}) {

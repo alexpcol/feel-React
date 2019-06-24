@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import { Text, View, TouchableOpacity} from 'react-native';
 import { connect } from 'react-redux';
-import { answerQuestion } from '../actions/survey'
+import { answerQuestion } from '../actions/survey';
+import { searchPlaylist } from '../actions/spotify';
 import { AppContainer } from '../components/common';
 import { colors } from '../styles/colors';
 
@@ -10,7 +11,8 @@ class SurveyScreen extends Component {
     isLoading: false
   }
   testEmotion = () => {
-    this.props.answerQuestion('I am gratefull you are ok')
+    //this.props.answerQuestion('I am gratefull you are ok')
+    this.props.searchPlaylist('happy')
   }
 
   componentDidMount() {
@@ -50,5 +52,6 @@ function mapStateToProps(state) {
   };
 }
 export default connect(mapStateToProps, {
-  answerQuestion
+  answerQuestion,
+  searchPlaylist
 })(SurveyScreen);

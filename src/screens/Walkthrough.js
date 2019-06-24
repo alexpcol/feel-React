@@ -19,40 +19,23 @@ class Walkthrough extends React.Component {
     this.props.navigation.goBack()
   };
   render() {
-    if (this.state.showRealApp) {
-      return (
-        <View
-          style={{
-            flex: 1,
-            justifyContent: 'center',
-            alignItems: 'center',
-            padding: 50,
-          }}>
-          <Text>
-            This will be your screen when you click Skip from any slide or Done
-            button at last
-          </Text>
-        </View>
-      );
-    } else {
-      return (
-        <LinearGradient
-          style={[styles.mainContent, {
-            flex: 1
-          }]}
-          colors={[colors.eastBay, colors.cadetBlue]}
-          start={{x: 0.0, y: 0.25}} end={{x: 0.5, y: 1.0}}
-        >
-            <StatusBar
-                barStyle='light-content'
-            />   
-            <AppIntroSlider
-              slides={slides}
-              onDone={this._onDone}
-            />
-          </LinearGradient>
-      );
-    }
+    return (
+      <LinearGradient
+        style={[styles.mainContent, {
+          flex: 1
+        }]}
+        colors={[colors.eastBay, colors.cadetBlue]}
+        start={{x: 0.0, y: 0.25}} end={{x: 0.5, y: 1.0}}
+      >
+          <StatusBar
+              barStyle='light-content'
+          />   
+          <AppIntroSlider
+            slides={slides}
+            onDone={this._onDone}
+          />
+        </LinearGradient>
+    );
   }
 }
 
@@ -65,51 +48,27 @@ export default connect(mapStateToProps, {
 })(Walkthrough);
 
 const styles = StyleSheet.create({
-  image: {
-    width: 200,
-    height: 200,
-  },
-  text: {
-    color: '#FFFFFF',
-    fontSize: 20,
-  },
-  title: {
-    fontSize: 28,
-    fontWeight: 'bold',
-    color: 'white',
-    backgroundColor: 'transparent',
-    textAlign: 'center',
-    marginTop: 16,
-  },
   mainContent: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'space-around',
   },
+  title: {
+    color: colors.alabasterWhite,
+    fontSize: 40,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  text: {
+    color: colors.alabasterWhite,
+    fontSize: 20,
+    fontWeight: '600',
+    marginBottom: 20
+  },
   image: {
     width: 320,
     height: 320,
   },
-  text: {
-    color: 'rgba(255, 255, 255, 0.8)',
-    backgroundColor: 'transparent',
-    textAlign: 'center',
-    paddingHorizontal: 16,
-  },
-  title: {
-    fontSize: 22,
-    color: 'white',
-    backgroundColor: 'transparent',
-    textAlign: 'center',
-    marginBottom: 16,
-  },
-  absolute: {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    bottom: 0,
-    right: 0
-  }
 });
  
 const slides = [
@@ -128,8 +87,9 @@ const slides = [
   {
     key: 's2',
     title: 'Flight Booking',
-    titleStyle: styles.title,
     text: 'Upto 25% off on Domestic Flights',
+    titleStyle: styles.title,
+    textStyle: styles.text,
     image: {
       uri:
         'https://aboutreact.com/wp-content/uploads/2018/08/flight_ticket_booking.png',
@@ -139,8 +99,9 @@ const slides = [
   {
     key: 's3',
     title: 'Great Offers',
-    titleStyle: styles.title,
     text: 'Enjoy Great offers on our all services',
+    titleStyle: styles.title,
+    textStyle: styles.text,
     image: {
       uri: 'https://aboutreact.com/wp-content/uploads/2018/08/discount1.png',
     },
