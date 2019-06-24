@@ -9,7 +9,7 @@ export default (state = INITIAL_STATE, { type, payload } = {}) => {
     case SEARCH_PLAYLIST:
       return {
         ...state,
-        playlists: payload
+        playlists: payload.playlists.items
       };
     default:
       return state;

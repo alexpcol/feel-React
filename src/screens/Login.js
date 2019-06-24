@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, Image} from 'react-native';
+import React, { Component } from 'react';
+import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
 import { connect } from 'react-redux';
 import RealmManager from '../services/realm/realm'
 import { shouldShowWalktrough } from '../actions/app'
@@ -28,13 +28,13 @@ class Login extends Component {
 
   renderButton = () => {
     if (this.state.isLoading) {
-      return(
+      return (
         <Spinner />
       )
     }
-    return(
+    return (
       <TouchableOpacity style={styles.buttonStyle} onPress={this.beginApp()}>
-                <Text style={styles.buttonText}>Start</Text>
+        <Text style={styles.buttonText}>Start</Text>
       </TouchableOpacity>
     )
   }
@@ -44,38 +44,38 @@ class Login extends Component {
       this.props.navigation.navigate('Walkthrough');
     }
     if (nextProps.isAuthorized) {
-      this.props.navigation.navigate('Home');
+      this.props.navigation.navigate('Survey');
     }
   }
 
   render() {
     return (
       <AppContainer
-      navigation={this.props.navigation}
-      linearGradient={true}
-      gradientColors={[colors.alabasterWhite, colors.linkWater]}
-      barStyle="dark-content"
+        navigation={this.props.navigation}
+        linearGradient={true}
+        gradientColors={[colors.alabasterWhite, colors.linkWater]}
+        barStyle="dark-content"
       >
         <View style={styles.container}>
           <Text style={styles.title}>Welcome to Feel</Text>
-          <View style={{justifyContent:'flex-start', alignItems:'center'}}>
-              <Image
-                source={require('../../assets/logo.png')}
-                resizeMode='contain'
-                style={{
-                  width: 400,
-                  height: 250,
-                  alignSelf: 'center'
-                }}
-              />
-              {this.renderButton()}
+          <View style={{ justifyContent: 'flex-start', alignItems: 'center' }}>
+            <Image
+              source={require('../../assets/logo.png')}
+              resizeMode='contain'
+              style={{
+                width: 400,
+                height: 250,
+                alignSelf: 'center'
+              }}
+            />
+            {this.renderButton()}
           </View>
           <View>
             <Text style={styles.footerTitle}>When ever you need It... We'll be there</Text>
           </View>
         </View>
       </AppContainer>
-      
+
     );
   }
 }
@@ -94,7 +94,7 @@ export default connect(mapStateToProps, {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection:'column',
+    flexDirection: 'column',
     justifyContent: 'space-between',
     alignItems: 'center',
   },
@@ -104,8 +104,8 @@ const styles = StyleSheet.create({
     fontSize: 40,
   },
   buttonStyle: {
-    width:150,
-    height:40,
+    width: 150,
+    height: 40,
     backgroundColor: colors.alabasterWhite,
     borderRadius: 14,
     shadowColor: '#000',
@@ -115,7 +115,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     color: colors.gray,
-    textAlign:'center',
+    textAlign: 'center',
     fontSize: 28,
     fontWeight: '800',
   },

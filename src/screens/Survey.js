@@ -97,7 +97,7 @@ class SurveyScreen extends Component {
   };
 
   navigateToNextScreen = () => {
-    console.log('Next Screen!')
+    this.props.navigation.navigate('ResultsScreen')
   };
 
   componentWillReceiveProps(nextProps) {
@@ -123,7 +123,7 @@ class SurveyScreen extends Component {
     return (
       <AppContainer
         containerBackgroundColor={colors.cadetBlue}
-        headerText="Survey"
+        headerText=""
         headerTextColor={colors.alabasterWhite}
         navigation={this.props.navigation}
       >
