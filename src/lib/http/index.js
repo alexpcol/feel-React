@@ -75,9 +75,9 @@ async function httpRequest(request) {
     headers['apiKey'] = request.config.apiKey
   }
 
-  if (!request.config.emotion && !request.config.auth) {
+  if (request.config.withToken) {
     console.log('[HTTP][Request] Set search headers');
-    headers['Authorization'] = await getAuthorizationToken()
+    headers['Authorization'] = `Bearer ${request.config.token}`
   }
 
   if (request.config.auth) {
@@ -85,7 +85,7 @@ async function httpRequest(request) {
       console.log(`[HTTP][Request] ${request.url}`);
       const dataURL = qs.stringify(request.data);
       let res;
-      res = await axios.post(request.url,dataURL,{
+      res = await axios.post(request.url, dataURL, {
         headers,
         auth: {
           username: data.username,
@@ -113,7 +113,7 @@ async function httpRequest(request) {
           ...request.config,
         });
       }
-  
+
       console.log('[HTTP][Request] Response:', res.data);
       return res.data;
     } catch (e) {
@@ -125,11 +125,14 @@ async function httpRequest(request) {
 
 async function getAuthorizationToken() {
   console.log('[Auth] getAuthorizationToken');
-  let lol = await RealmManager.get('Session', (object) => {
+  RealmManager.get('Session', (object) => {
     let session = Array.from(object)[0]
-    return `Bearer ${session.token}`
+    this.setAuthorizationToken(`Bearer ${session.token}`)
   })
-  console.log(lol)
+}
+
+async function setAuthorizationToken(token) {
+
 }
 
 function post(url, data, config = {}) {

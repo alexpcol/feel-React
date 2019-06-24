@@ -4,6 +4,7 @@ const INITIAL_STATE = {
   error: '',
   message: '',
   authorized: false,
+  token: ''
 };
 
 export default (state = INITIAL_STATE, { type, payload } = {}) => {
@@ -14,10 +15,11 @@ export default (state = INITIAL_STATE, { type, payload } = {}) => {
         error: '',
         message: '',
         authorized: true,
+        token: payload.access_token
       };
     case AUTHORIZATION_ERROR:
       return { ...state, error: payload };
-      
+
     default:
       return state;
   }
