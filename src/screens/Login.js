@@ -22,9 +22,8 @@ class Login extends Component {
   beginApp = () => () => {
     this.setState({
       isLoading: true
-    },() => {
-      this.props.authorizeUser()
     })
+    this.props.authorizeUser()
   };
 
   renderButton = () => {
@@ -40,13 +39,16 @@ class Login extends Component {
     )
   }
 
-  render() {
-    if (this.props.showWalkthrough) {
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.showWalkthrough) {
       this.props.navigation.navigate('Walkthrough');
     }
-    if (this.props.isAuthorized) {
+    if (nextProps.isAuthorized) {
       this.props.navigation.navigate('Home');
     }
+  }
+
+  render() {
     return (
       <AppContainer
       navigation={this.props.navigation}

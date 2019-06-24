@@ -6,14 +6,21 @@ import { AppContainer } from '../components/common';
 import { colors } from '../styles/colors';
 
 class SurveyScreen extends Component {
-
-  testEmotion = () => () => {
+  state = {
+    isLoading: false
+  }
+  testEmotion = () => {
     this.props.answerQuestion('I am gratefull you are ok')
   }
-  render() {
 
-    if (this.props.emotions.count) {
-      print('Hellow')
+  componentDidMount() {
+    this.setState({
+      isLoading: true
+    })
+  }
+  render() {
+    if (this.state.isLoading) {
+      console.log('heklkl')
     }
     return (
       <AppContainer
@@ -23,7 +30,7 @@ class SurveyScreen extends Component {
       >
         <View style={{flex:1, backgroundColor:'red' ,flexDirection:'column', justifyContent:'space-between'}}>
           <Text>Hello</Text>
-          <TouchableOpacity onPress={this.testEmotion()}>
+          <TouchableOpacity onPress={this.testEmotion}>
             <Text>Hello</Text>
           </TouchableOpacity>
           <View style={{backgroundColor:'green', flexDirection:'row', justifyContent:'space-between'}}>

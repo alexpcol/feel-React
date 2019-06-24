@@ -7,10 +7,9 @@ const INITIAL_STATE = {
 export default (state = INITIAL_STATE, { type, payload } = {}) => {
   switch (type) {
     case QUESTION_ANSWERED:
-      const emotion = payload.response
-      state.emotions.push(emotion)
       return {
         ...state,
+        emotions: state.emotions.concat(payload.response)
       };
     default:
       return state;

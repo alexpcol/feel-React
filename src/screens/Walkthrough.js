@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 import AppIntroSlider from 'react-native-app-intro-slider';
 import LinearGradient from 'react-native-linear-gradient';
+import StatusBar from '../styles/statusBar/GeneralStatusBarColor';
 import { connect } from 'react-redux';
 import { walktroughSeen } from '../actions/app'
 import { colors } from '../styles/colors'
@@ -41,7 +42,10 @@ class Walkthrough extends React.Component {
           }]}
           colors={[colors.eastBay, colors.cadetBlue]}
           start={{x: 0.0, y: 0.25}} end={{x: 0.5, y: 1.0}}
-        >      
+        >
+            <StatusBar
+                barStyle='light-content'
+            />   
             <AppIntroSlider
               slides={slides}
               onDone={this._onDone}
@@ -54,7 +58,6 @@ class Walkthrough extends React.Component {
 
 function mapStateToProps(state) {
   return {
-    promotions: state.promotions.promotions
   };
 }
 export default connect(mapStateToProps, {
