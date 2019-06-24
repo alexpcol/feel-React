@@ -1,13 +1,7 @@
 import { SERVER_ERROR, LOGOUT_USER, NETWORK_ERROR, REQUEST_ERROR } from '../../actions/types';
-import profile from './profile';
 import auth from './auth';
-import kardex from './kardex';
-import employees from './employees';
-import promotions from './promotions';
-import receipts from './receipts';
-import headCount from './headCount';
-import periodSpending from './periodSpending';
-import gathered from './gathered';
+import deepAffect from './deepAffects';
+
 
 function handleError(type, dispatch) {
   return (err) => {
@@ -39,12 +33,5 @@ function handleError(type, dispatch) {
 export default {
   handleError,
   auth,
-  profile,
-  kardex,
-  employees,
-  promotions,
-  receipts,
-  headCount,
-  periodSpending,
-  gathered
+  deepAffect
 };

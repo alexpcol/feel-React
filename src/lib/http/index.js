@@ -1,8 +1,8 @@
 import axios from 'axios';
 import qs from 'qs';
-import { getAuthorizationToken } from '../auth';
 import ConnectionHandler from '../../services/ConnectionHandler';
 import _Error from './Error';
+import RealmManager from '../../services/realm/realm';
 
 /*
  * Error handler
@@ -63,37 +63,58 @@ async function httpRequest(request) {
   if (!ConnectionHandler.isConnected) throw new _Error('Offline', { type: 'NetworkError' });
 
   /* Config request */
-  if (request.config.form) {
+  if (request.config.auth) {
+    console.log('[HTTP][Request] Set auth headers');
     headers['Content-Type'] = 'application/x-www-form-urlencoded';
-    data = qs.stringify(request.data);
+    headers['Accept'] = 'application/json';
   }
 
   /* Make request */
-  if (!request.config.auth) {
-    console.log('[HTTP][Request] Set auth headers');
-    headers.Authorization = await getAuthorizationToken();
+  if (request.config.emotion) {
+    console.log('[HTTP][Request] Set emotion headers');
+    headers['apiKey'] = request.config.apiKey
   }
 
-  try {
-    console.log(`[HTTP][Request] ${request.url}`);
-    let res;
-    if (request.method === 'get') {
-      res = await axios.get(request.url, {
+  if (request.config.auth) {
+    try {
+      console.log(`[HTTP][Request] ${request.url}`);
+      const dataURL = qs.stringify(request.data);
+      let res;
+      res = await axios.post(request.url,dataURL,{
         headers,
-        ...request.config,
+        auth: {
+          username: data.username,
+          password: data.password
+        }
       });
-    } else {
-      res = await axios[request.method](request.url, data, {
-        headers,
-        ...request.config,
-      });
+      console.log('[HTTP][Request] Response:', res.data);
+      return res.data;
+    } catch (e) {
+      console.log('[HTTP][Request] Error response:', e);
+      return errorHandler(e);
     }
-
-    console.log('[HTTP][Request] Response:', res.data);
-    return res.data;
-  } catch (e) {
-    console.log('[HTTP][Request] Error response:', e);
-    return errorHandler(e);
+  } else {
+    try {
+      console.log(`[HTTP][Request] ${request.url}`);
+      let res;
+      if (request.method === 'get') {
+        res = await axios.get(request.url, {
+          headers,
+          ...request.config,
+        });
+      } else {
+        res = await axios[request.method](request.url, data, {
+          headers,
+          ...request.config,
+        });
+      }
+  
+      console.log('[HTTP][Request] Response:', res.data);
+      return res.data;
+    } catch (e) {
+      console.log('[HTTP][Request] Error response:', e);
+      return errorHandler(e);
+    }
   }
 }
 

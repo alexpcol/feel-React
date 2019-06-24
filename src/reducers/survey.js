@@ -1,20 +1,17 @@
-import { RESET, LIST_PROMOTIONS } from '../actions/types';
+import { QUESTION_ANSWERED } from '../actions/types';
 
 const INITIAL_STATE = {
-  promotions: null,
+  emotions: []
 };
 
 export default (state = INITIAL_STATE, { type, payload } = {}) => {
   switch (type) {
-    case LIST_PROMOTIONS:
+    case QUESTION_ANSWERED:
+      const emotion = payload.response
+      state.emotions.push(emotion)
       return {
         ...state,
-        promotions: payload,
       };
-
-    case RESET:
-      return INITIAL_STATE;
-      
     default:
       return state;
   }

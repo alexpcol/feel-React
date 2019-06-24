@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, TouchableOpacity, Image} from 'react-native';
 import { connect } from 'react-redux';
 import RealmManager from '../services/realm/realm'
 import { shouldShowWalktrough } from '../actions/app'
+import { authorizeUser } from '../actions/auth'
 import { AppContainer, Spinner } from '../components/common';
 import { colors } from '../styles/colors';
 
@@ -21,6 +22,8 @@ class Login extends Component {
   beginApp = () => () => {
     this.setState({
       isLoading: true
+    },() => {
+      this.props.authorizeUser()
     })
   };
 
@@ -40,6 +43,9 @@ class Login extends Component {
   render() {
     if (this.props.showWalkthrough) {
       this.props.navigation.navigate('Walkthrough');
+    }
+    if (this.props.isAuthorized) {
+      this.props.navigation.navigate('Home');
     }
     return (
       <AppContainer
@@ -74,11 +80,13 @@ class Login extends Component {
 
 function mapStateToProps(state) {
   return {
-    showWalkthrough: state.app.showWalkthrough
+    showWalkthrough: state.app.showWalkthrough,
+    isAuthorized: state.auth.authorized
   };
 }
 export default connect(mapStateToProps, {
   shouldShowWalktrough,
+  authorizeUser
 })(Login);
 
 const styles = StyleSheet.create({

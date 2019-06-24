@@ -1,31 +1,20 @@
 import React, {Component} from 'react';
-import { StyleSheet, Text, View, TouchableOpacity} from 'react-native';
-import RealmManager from '../services/realm/realm';
+import { Text, View, TouchableOpacity} from 'react-native';
+import { connect } from 'react-redux';
+import { answerQuestion } from '../actions/survey'
 import { AppContainer } from '../components/common';
 import { colors } from '../styles/colors';
 
-class HomeScreen extends Component {
+class SurveyScreen extends Component {
 
-  componentDidMount() {
-    // RealmManager.update('AppConfig',{
-    //   id:17,
-    //   showWalkthrough: true
-    // })
-
-    RealmManager.get('AppConfig', (object) => {
-      let config = Array.from(object)[0]
-      console.log(config.showWalkthrough)
-      if (config.showWalkthrough) {
-        this.props.navigation.navigate('Walkthrough');
-      }
-    })
+  testEmotion = () => () => {
+    this.props.answerQuestion('I am gratefull you are ok')
   }
-
-  navigateToDetail = () => {
-    this.props.navigation.navigate('Walkthrough');
-  };
-
   render() {
+
+    if (this.props.emotions.count) {
+      print('Hellow')
+    }
     return (
       <AppContainer
       containerBackgroundColor={colors.cadetBlue}
@@ -34,7 +23,7 @@ class HomeScreen extends Component {
       >
         <View style={{flex:1, backgroundColor:'red' ,flexDirection:'column', justifyContent:'space-between'}}>
           <Text>Hello</Text>
-          <TouchableOpacity onPress={this.navigateToDetail}>
+          <TouchableOpacity onPress={this.testEmotion()}>
             <Text>Hello</Text>
           </TouchableOpacity>
           <View style={{backgroundColor:'green', flexDirection:'row', justifyContent:'space-between'}}>
@@ -48,37 +37,11 @@ class HomeScreen extends Component {
     );
   }
 }
-
-export default HomeScreen;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-  linearGradient: {
-    flex: 1,
-    paddingLeft: 15,
-    paddingRight: 15,
-    borderRadius: 5
-  },
-  buttonText: {
-    fontSize: 18,
-    fontFamily: 'Gill Sans',
-    textAlign: 'center',
-    margin: 10,
-    color: '#ffffff',
-    backgroundColor: 'transparent',
-  },
-});
+function mapStateToProps(state) {
+  return {
+    emotions: state.survey.emotions
+  };
+}
+export default connect(mapStateToProps, {
+  answerQuestion
+})(SurveyScreen);

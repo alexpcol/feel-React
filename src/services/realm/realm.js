@@ -1,8 +1,9 @@
 import Realm from 'realm';
 import AppConfig from './schemes/appConfig'
+import Session from './schemes/session'
 
 function realmHandler (callback) {
-    Realm.open({schema: [AppConfig]})
+    Realm.open({schema: [AppConfig, Session]})
     .then(callback)
 }
 
