@@ -1,5 +1,5 @@
 import Api from '../services/Api';
-import { QUESTION_ANSWERED, AUTHORIZATION_ERROR } from './types';
+import { QUESTION_ANSWERED, OPTION_SELECTED, AUTHORIZATION_ERROR } from './types';
 
 export function answerQuestion(text) {
   return async (dispatch) => {
@@ -9,5 +9,11 @@ export function answerQuestion(text) {
     } catch (e) {
       return Api.handleError(AUTHORIZATION_ERROR, dispatch)(e);
     }
+  };
+}
+
+export function saveOption(key) {
+  return (dispatch) => {
+    dispatch({ type: OPTION_SELECTED, payload: key });
   };
 }

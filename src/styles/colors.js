@@ -7,8 +7,8 @@ const colors = {
     linkWater: '#BFCAD9',
     cadetBlue: '#A5AABF',
     eastBay: '#4B4876',
-    cornFlowerBlue: '464271',
-    gray:'#606060',
+    cornFlowerBlue: '#464271',
+    gray: '#606060',
 };
 
 export { colors };
