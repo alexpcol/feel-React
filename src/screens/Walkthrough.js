@@ -63,47 +63,51 @@ const styles = StyleSheet.create({
     color: colors.alabasterWhite,
     fontSize: 20,
     fontWeight: '600',
-    marginBottom: 20
+    marginBottom: 40
   },
   image: {
     width: 320,
     height: 320,
+    borderRadius: 10,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 5 },
+    shadowOpacity: 0.2,
   },
 });
  
 const slides = [
   {
     key: 's1',
-    text: 'Best Recharge offers',
-    title: 'Mobile Recharge',
+    title: 'Behold to the new way to experience music',
+    text: 'Just tell us a little about you and we will give you a very pleasant suprise',
     titleStyle: styles.title,
     textStyle: styles.text,
     image: {
       uri:
-        'https://aboutreact.com/wp-content/uploads/2018/08/mobile_recharge.png',
+        'https://i.pinimg.com/564x/3c/f2/66/3cf2660612c488f3c60df3df316d04b7.jpg',
     },
     imageStyle: styles.image,
   },
   {
     key: 's2',
-    title: 'Flight Booking',
-    text: 'Upto 25% off on Domestic Flights',
+    title: 'Taking care of you with modern technologies',
+    text: 'Just answer an easy survey and we will try figure out your current mood',
     titleStyle: styles.title,
     textStyle: styles.text,
     image: {
       uri:
-        'https://aboutreact.com/wp-content/uploads/2018/08/flight_ticket_booking.png',
+        'https://i.pinimg.com/564x/3a/dd/cf/3addcfe7add17f74d3888b0a6e9911fc.jpg',
     },
     imageStyle: styles.image,
   },
   {
     key: 's3',
-    title: 'Great Offers',
-    text: 'Enjoy Great offers on our all services',
+    title: 'Unlimited options for you and your current mood',
+    text: 'With the help of Spotify we can offer you variety of content',
     titleStyle: styles.title,
     textStyle: styles.text,
     image: {
-      uri: 'https://aboutreact.com/wp-content/uploads/2018/08/discount1.png',
+      uri: 'https://i.pinimg.com/564x/0e/f7/30/0ef730136bcaf3758b5f2a04d1043e1a.jpg',
     },
     imageStyle: styles.image,
   }

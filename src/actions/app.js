@@ -33,10 +33,15 @@ export function shouldShowWalktrough() {
   return dispatch => {
     RealmManager.get('AppConfig', (object) => {
       let config = Array.from(object)[0]
-      console.log(config.showWalkthrough)
+      let walkthroug;
+      if(config) {
+        walkthroug = config.showWalkthrough
+      } else {
+        walkthroug = true
+      }
       dispatch({
         type: SHOW_WALKTHROUGH,
-        payload: config.showWalkthrough
+        payload: walkthroug
       })
     })
   }
