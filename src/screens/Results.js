@@ -66,7 +66,7 @@ class Results extends Component {
 
     renderOption = ({ item, index }) => {
         return (
-            <TouchableOpacity key={index} style={styles.buttonStyle} onPress={this.setPlaylist(item)}>
+            <TouchableOpacity key={item.id} style={styles.buttonStyle} onPress={this.setPlaylist(item)}>
                 <Image style={styles.image} source={{ uri: item.images[0].url }} />
                 <Text style={styles.textOption}>{item.name}</Text>
             </TouchableOpacity>
@@ -88,7 +88,7 @@ class Results extends Component {
                         contentContainerStyle={styles.listContent}
                         data={playlists}
                         keyExtractor={(item, index) => {
-                            return item
+                            return item.id
                         }}
                         renderItem={this.renderOption}
                     />
@@ -121,7 +121,10 @@ const styles = StyleSheet.create({
         backgroundColor: colors.alabasterWhite,
         borderRadius: 10,
         marginTop: 30,
-        overflow: 'hidden'
+        overflow: 'hidden',
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 5 },
+        shadowOpacity: 0.2,
     },
     textOption: {
         color: colors.eastBay,

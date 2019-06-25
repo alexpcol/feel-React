@@ -18,9 +18,10 @@ class Tracks extends Component {
 
     renderOption = ({ item, index }) => {
         return (
-            <TouchableOpacity key={index} style={styles.buttonStyle}>
+            <TouchableOpacity key={item.track.id} style={styles.buttonStyle}>
                 <Image style={styles.image} source={{ uri: item.track.album.images[1].url }} />
                 <Text style={styles.textOption}>{item.track.name}</Text>
+                <Text style={styles.textOption}>{item.track.artists[0].name}</Text>
             </TouchableOpacity>
         );
     };
@@ -36,7 +37,7 @@ class Tracks extends Component {
                 navigation={this.props.navigation}
             >
                 <View style={{ flex: 1 }}>
-                    <View style={{flexDirection:'row', justifyContent:'space-between'}}>
+                    <View style={{flexDirection:'row', justifyContent:'space-between', padding: 10}}>
                         <Text style={styles.title}>{playlist.name}</Text>
                         <Image style={styles.mainImage} source={{ uri: playlist.images[0].url }} />
                     </View>
@@ -45,7 +46,7 @@ class Tracks extends Component {
                         contentContainerStyle={styles.listContent}
                         data={tracks}
                         keyExtractor={(item, index) => {
-                            return item
+                            return item.track.id
                         }}
                         renderItem={this.renderOption}
                     />
@@ -78,7 +79,10 @@ const styles = StyleSheet.create({
         backgroundColor: colors.alabasterWhite,
         borderRadius: 10,
         marginTop: 30,
-        overflow: 'hidden'
+        overflow: 'hidden',
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 5 },
+        shadowOpacity: 0.2,
     },
     textOption: {
         color: colors.eastBay,
