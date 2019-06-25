@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, FlatList, Image } from 'react-native';
 import { connect } from 'react-redux';
-import { searchPlaylist } from '../actions/spotify';
+import { searchPlaylist, playlistSelected } from '../actions/spotify';
 import { AppContainer, Spinner } from '../components/common';
 import { colors } from '../styles/colors';
 
@@ -54,9 +54,19 @@ class Results extends Component {
         return (realEmotions)
     }
 
+    setPlaylist = item => () => {
+        this.props.playlistSelected(item)
+    };
+
+    componentWillReceiveProps(nextProps) {
+        if(nextProps.playlistChosen) {
+            this.props.navigation.navigate('TracksScreen')
+        }
+    }
+
     renderOption = ({ item, index }) => {
         return (
-            <TouchableOpacity key={index} style={styles.buttonStyle}>
+            <TouchableOpacity key={index} style={styles.buttonStyle} onPress={this.setPlaylist(item)}>
                 <Image style={styles.image} source={{ uri: item.images[0].url }} />
                 <Text style={styles.textOption}>{item.name}</Text>
             </TouchableOpacity>
@@ -92,11 +102,13 @@ function mapStateToProps(state) {
     return {
         emotions: state.survey.emotions,
         playlists: state.spotify.playlists,
-        token: state.auth.token
+        token: state.auth.token,
+        playlistChosen: state.spotify.playlistSelected
     };
 }
 export default connect(mapStateToProps, {
     searchPlaylist,
+    playlistSelected
 })(Results);
 
 const styles = StyleSheet.create({

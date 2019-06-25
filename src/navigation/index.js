@@ -3,6 +3,7 @@ import Walkthrough from '../screens/Walkthrough'
 import LoginScreen from '../screens/Login'
 import SurveyScreen from '../screens/Survey'
 import ResultsScreen from '../screens/Results'
+import TracksScreen from '../screens/Tracks'
 
 const AppNavigator = createStackNavigator({
   SurveyScreen: {
@@ -13,6 +14,9 @@ const AppNavigator = createStackNavigator({
     navigationOptions: () => ({
       gesturesEnabled: false
     })
+  },
+  TracksScreen: {
+    screen: TracksScreen
   }
 }, {
     initialRouteName: 'SurveyScreen',

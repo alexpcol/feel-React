@@ -18,3 +18,5 @@ export const OPTION_SELECTED = "option_selected";
 
 // Spotify Actions
 export const SEARCH_PLAYLIST = "search_playlist"
+export const GET_TRACKS = "get_tracks"
+export const PLAYLIST_SELECTED = "playlist_selected"
