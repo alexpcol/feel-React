@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, FlatList, Image } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, FlatList, Image, Animated } from 'react-native';
 import { connect } from 'react-redux';
 import { searchPlaylist, playlistSelected } from '../actions/spotify';
 import { AppContainer, Spinner } from '../components/common';
@@ -8,7 +8,25 @@ import { colors } from '../styles/colors';
 class Results extends Component {
     state = {
         isLoading: false,
-        emotions: []
+        emotions: [],
+        animatedValue: new Animated.Value(0)
+    }
+
+    constructor(props) {
+        super(props)
+        this.delayValue = 800;
+    }
+
+    componentDidMount() {
+        this.setAnimation()
+    }
+
+    setAnimation = () => {
+        Animated.spring(this.state.animatedValue, {
+            toValue: 1,
+            tension: 20,
+            useNativeDriver: true
+        }).start();
     }
 
     componentWillMount() {
@@ -59,17 +77,30 @@ class Results extends Component {
     };
 
     componentWillReceiveProps(nextProps) {
-        if(nextProps.playlistChosen) {
+        if (nextProps.playlistChosen) {
             this.props.navigation.navigate('TracksScreen')
+        } else {
+            this.setState({
+                animatedValue: new Animated.Value(0)
+            }, () => {
+                this.setAnimation()
+            })
         }
     }
 
     renderOption = ({ item, index }) => {
+        this.delayValue = this.delayValue + 500;
+        const translateX = this.state.animatedValue.interpolate({
+            inputRange: [0, 1],
+            outputRange: [this.delayValue, 1]
+        });
         return (
-            <TouchableOpacity key={item.id} style={styles.buttonStyle} onPress={this.setPlaylist(item)}>
-                <Image style={styles.image} source={{ uri: item.images[0].url }} />
-                <Text style={styles.textOption}>{item.name}</Text>
-            </TouchableOpacity>
+            <Animated.View style={{ transform: [{ translateX }] }}>
+                <TouchableOpacity key={item.id} style={styles.buttonStyle} onPress={this.setPlaylist(item)}>
+                    <Image style={styles.image} source={{ uri: item.images[0].url }} />
+                    <Text style={styles.textOption}>{item.name}</Text>
+                </TouchableOpacity>
+            </Animated.View>
         );
     };
 

@@ -144,12 +144,12 @@ class SurveyScreen extends Component {
 
   renderOption = ({ item, index }) => {
     this.delayValue = this.delayValue + 500;
-    const translateX = this.state.animatedValue.interpolate({
+    const translateY = this.state.animatedValue.interpolate({
       inputRange: [0, 1],
       outputRange: [this.delayValue, 1]
     });
     return (
-      <Animated.View style={{ transform: [{ translateX }] }}>
+      <Animated.View style={{ transform: [{ translateY }] }}>
         <TouchableOpacity key={index} style={styles.buttonStyle} onPress={this.getEmotion(item, index)}>
           <Text style={styles.textOption}>{item.text}</Text>
         </TouchableOpacity>
