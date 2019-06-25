@@ -4,7 +4,7 @@
             "outputFile": "/Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lt/values-lt.xml",
             "map": [
                 {
-                    "source": "/Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/a8f70fc5c28fb67df67822136bd3db1e/res/values-lt/values-lt.xml",
+                    "source": "/Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/8984dbfcb81e37b3c9a7042058f69ea9/res/values-lt/values-lt.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/b1bbeef62ebebb2c15d2d6a028910c7f/res/values-lt/values-lt.xml",
+                    "source": "/Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/c666d8fe3cca81230dbff5816f67fcde/res/values-lt/values-lt.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
