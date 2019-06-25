@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 import AppIntroSlider from 'react-native-app-intro-slider';
 import LinearGradient from 'react-native-linear-gradient';
 import StatusBar from '../styles/statusBar/GeneralStatusBarColor';
@@ -14,6 +14,7 @@ class Walkthrough extends React.Component {
       showRealApp: false,
     };
   }
+
   _onDone = () => {
     this.props.walktroughSeen()
     this.props.navigation.goBack()
@@ -25,16 +26,16 @@ class Walkthrough extends React.Component {
           flex: 1
         }]}
         colors={[colors.eastBay, colors.cadetBlue]}
-        start={{x: 0.0, y: 0.25}} end={{x: 0.5, y: 1.0}}
+        start={{ x: 0.0, y: 0.25 }} end={{ x: 0.5, y: 1.0 }}
       >
-          <StatusBar
-              barStyle='light-content'
-          />   
-          <AppIntroSlider
-            slides={slides}
-            onDone={this._onDone}
-          />
-        </LinearGradient>
+        <StatusBar
+          barStyle='light-content'
+        />
+        <AppIntroSlider
+          slides={slides}
+          onDone={this._onDone}
+        />
+      </LinearGradient>
     );
   }
 }
@@ -66,15 +67,15 @@ const styles = StyleSheet.create({
     marginBottom: 40
   },
   image: {
-    width: 320,
-    height: 320,
+    width: Dimensions.get('window').width / 1.5,
+    height: Dimensions.get('window').height / 2.5,
     borderRadius: 10,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 5 },
     shadowOpacity: 0.2,
   },
 });
- 
+
 const slides = [
   {
     key: 's1',

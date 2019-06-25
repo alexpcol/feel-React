@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Image, Animated, Easing } from 'react-native';
 import { connect } from 'react-redux';
 import RealmManager from '../services/realm/realm'
 import { shouldShowWalktrough } from '../actions/app'
@@ -9,14 +9,23 @@ import { colors } from '../styles/colors';
 
 class Login extends Component {
   state = {
-    isLoading: false
+    isLoading: false,
+    fadeAnim: new Animated.Value(0),
   }
   componentWillMount() {
     this.props.shouldShowWalktrough()
-    // RealmManager.update('AppConfig',{
-    //   id:17,
-    //   showWalkthrough: true
-    // })
+  }
+
+  componentDidMount() {
+    Animated.timing(
+      this.state.fadeAnim,
+      {
+        toValue: 1,
+        duration: 900,
+        useNativeDriver: true,
+        easing: Easing.back(),
+      }
+    ).start()
   }
 
   beginApp = () => () => {
@@ -49,6 +58,7 @@ class Login extends Component {
   }
 
   render() {
+    let { fadeAnim } = this.state
     return (
       <AppContainer
         navigation={this.props.navigation}
@@ -56,7 +66,7 @@ class Login extends Component {
         gradientColors={[colors.alabasterWhite, colors.linkWater]}
         barStyle="dark-content"
       >
-        <View style={styles.container}>
+        <Animated.View style={[styles.container, { opacity: fadeAnim }]}>
           <Text style={styles.title}>Welcome to Feel</Text>
           <View style={{ justifyContent: 'flex-start', alignItems: 'center' }}>
             <Image
@@ -70,10 +80,10 @@ class Login extends Component {
             />
             {this.renderButton()}
           </View>
-          <View>
+          <View style={{ marginBottom: 10 }}>
             <Text style={styles.footerTitle}>When ever you need It... We'll be there</Text>
           </View>
-        </View>
+        </Animated.View>
       </AppContainer>
 
     );

@@ -81,57 +81,60 @@ class SurveyScreen extends Component {
     indexSelected: -1
   }
 
-  getEmotion = (item, index) => () => {
-    this.setState(prevState => ({
-      isLoading: !prevState.isLoading,
-      indexSelected: prevState.indexSelected + 1 + index
-    }))
-    this.props.saveOption(item.key)
-    this.props.answerQuestion(item.text)
-  };
-
-  renderOption = ({ item, index }) => {
-    if (this.state.isLoading && this.state.indexSelected == index) {
-      return (
-        <View key={index} style={styles.buttonStyle}>
-          <Spinner />
-        </View>
-      )
-    } else {
-      return (
-        <TouchableOpacity key={index} style={styles.buttonStyle} onPress={this.getEmotion(item, index)}>
-          <Text style={styles.textOption}>{item.text}</Text>
-        </TouchableOpacity>
-      );
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.gotEmotion) {
+      switch (nextProps.emotions.length) {
+        case 1:
+          this.setState({
+            questionIndex: 1,
+            isLoading: false,
+            indexSelected: -1,
+          })
+          break
+        case 2:
+          this.setState({
+            questionIndex: 2,
+            isLoading: false,
+            indexSelected: -1,
+          })
+          break
+        case 3:
+          this.navigateToNextScreen()
+          break
+      }
     }
-  };
+  }
 
   navigateToNextScreen = () => {
     this.props.navigation.navigate('ResultsScreen')
   };
 
-  componentWillReceiveProps(nextProps) {
-    switch (nextProps.emotions.length) {
-      case 1:
-        this.setState({
-          questionIndex: 1,
-          isLoading: false,
-          indexSelected: -1,
-        })
-        break
-      case 2:
-        this.setState({
-          questionIndex: 2,
-          isLoading: false,
-          indexSelected: -1,
-        })
-        break
-      case 3:
-        this.navigateToNextScreen()
-        break
+  getEmotion = (item, index) => () => {
+    this.setState({
+      isLoading: true,
+      indexSelected: index
+    }, () => {
+      this.props.saveOption(item.key)
+      this.props.answerQuestion(item.text)
+    })
+
+  };
+
+  renderOption = ({ item, index }) => {
+    return (
+      <TouchableOpacity key={index} style={styles.buttonStyle} onPress={this.getEmotion(item, index)}>
+        <Text style={styles.textOption}>{item.text}</Text>
+      </TouchableOpacity>
+    );
+  };
+
+  renderSpiner = () => {
+    if (this.state.isLoading) {
+      return (
+        <Spinner />
+      )
     }
   }
-
 
   render() {
     return (
@@ -142,7 +145,11 @@ class SurveyScreen extends Component {
         navigation={this.props.navigation}
       >
         <View style={{ flex: 1 }}>
-          <Text style={styles.title}>{survey[this.state.questionIndex].question}</Text>
+          <View style={{ flexDirection: 'row', justifyContent: 'space-between', padding: 10 }}>
+            <Text style={styles.title}>{survey[this.state.questionIndex].question}</Text>
+            {this.renderSpiner()}
+          </View>
+
           <FlatList
             extraData={this.state}
             contentContainerStyle={styles.listContent}
@@ -162,7 +169,8 @@ function mapStateToProps(state) {
   return {
     emotions: state.survey.emotions,
     optionsSelected: state.survey.optionsSelected,
-    token: state.auth.token
+    token: state.auth.token,
+    gotEmotion: state.survey.gotEmotion,
   };
 }
 export default connect(mapStateToProps, {
@@ -175,6 +183,7 @@ const styles = StyleSheet.create({
     color: colors.alabasterWhite,
     fontWeight: 'bold',
     fontSize: 40,
+    width: 250
   },
   buttonStyle: {
     borderColor: colors.alabasterWhite,
