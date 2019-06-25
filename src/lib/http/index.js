@@ -1,6 +1,7 @@
 import axios from 'axios';
 import qs from 'qs';
 import _Error from './Error';
+import { decode as atob, encode as btoa } from 'base-64'
 
 /*
  * Error handler
@@ -50,6 +51,7 @@ async function httpRequest(request) {
     console.log('[HTTP][Request] Set auth headers');
     headers['Content-Type'] = 'application/x-www-form-urlencoded';
     headers['Accept'] = 'application/json';
+    headers['Authorization'] = 'Basic ' + btoa(`${data.username}:${data.password}`)
   }
 
   /* Make request */
@@ -70,10 +72,6 @@ async function httpRequest(request) {
       let res;
       res = await axios.post(request.url, dataURL, {
         headers,
-        auth: {
-          username: data.username,
-          password: data.password
-        }
       });
       console.log('[HTTP][Request] Response:', res.data);
       return res.data;

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, FlatList, Image } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, FlatList, Image, Linking } from 'react-native';
 import { connect } from 'react-redux';
 import { getTracks } from '../actions/spotify';
 import { AppContainer, Spinner } from '../components/common';
@@ -16,9 +16,13 @@ class Tracks extends Component {
         this.props.getTracks(this.props.tracksURL, this.props.token)
     }
 
+    openTrack = URL => () => {
+        Linking.openURL(URL)
+    };
+
     renderOption = ({ item, index }) => {
         return (
-            <TouchableOpacity key={item.track.id} style={styles.buttonStyle}>
+            <TouchableOpacity key={item.track.id} style={styles.buttonStyle} onPress={this.openTrack(item.track.external_urls.spotify)}>
                 <Image style={styles.image} source={{ uri: item.track.album.images[1].url }} />
                 <Text style={styles.textOption}>{item.track.name}</Text>
                 <Text style={styles.textOption}>{item.track.artists[0].name}</Text>
@@ -37,11 +41,11 @@ class Tracks extends Component {
                 navigation={this.props.navigation}
             >
                 <View style={{ flex: 1 }}>
-                    <View style={{flexDirection:'row', justifyContent:'space-between', padding: 10}}>
+                    <View style={{ flexDirection: 'row', justifyContent: 'space-between', padding: 10 }}>
                         <Text style={styles.title}>{playlist.name}</Text>
                         <Image style={styles.mainImage} source={{ uri: playlist.images[0].url }} />
                     </View>
-                    
+
                     <FlatList
                         contentContainerStyle={styles.listContent}
                         data={tracks}
@@ -95,7 +99,7 @@ const styles = StyleSheet.create({
         paddingVertical: 8
     },
     mainImage: {
-        height:100,
+        height: 100,
         width: 100,
         borderRadius: 10,
     },
