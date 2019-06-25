@@ -1,48 +1,48 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:1:1-26:12
-MERGED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:1:1-26:12
+ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:1:1-32:12
+INJECTED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:1:1-32:12
+INJECTED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:1:1-32:12
+INJECTED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:1:1-32:12
+MERGED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:1:1-32:12
 MERGED from [:react-native-linear-gradient] /Users/mauricioconde/Documents/React Native/proyecto/feel-React/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:@react-native-community_blur] /Users/mauricioconde/Documents/React Native/proyecto/feel-React/node_modules/@react-native-community/blur/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:realm] /Users/mauricioconde/Documents/React Native/proyecto/feel-React/node_modules/realm/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-gesture-handler] /Users/mauricioconde/Documents/React Native/proyecto/feel-React/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.react:react-native:0.59.9] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/a0c3b44ebf38c8c6d715591b7b4b1fad/AndroidManifest.xml:2:1-13:12
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/b1bbeef62ebebb2c15d2d6a028910c7f/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/2b4808fdf23c9ba712aed8d9b364c3ae/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/0fdbd9a4c129ad080cb3e683e1380d53/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/7f10e64240bb9d300d37af51860c3834/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/b058ac9bd9d3e59e5f813476069c3336/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/23b7053ec0c5dcac0c1a066d2eba8369/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/d86838f5261d2d445bafad835381bc7e/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/6255f519100bf55d74e5865ebd6e6822/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/fba3a9b277aa5b0b06f71a36f06c4087/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/66f58d0a22f8345527f6331ee1fcb7d4/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/24a82cbf5a73e6ea0de17477130b644e/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/b51297bdf227707c44c3f2d3ff87ad95/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/9127fb23e97736aeaa034c12b37a5142/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/ed069e1205305844341440be23333f96/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/a8f70fc5c28fb67df67822136bd3db1e/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/2e60221319da728875602f963e1b0256/AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/3f429996b571c224a66353b7450be488/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/282a8663be2e472352378dd510677e1f/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:documentfile:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/48a084369cc395ae1e73f94cf3b0311f/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/038da5c9406334010e51def44d201d23/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/67504dedc60423e5597e6265cbbac54a/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/de52e053afe02e992c984eff27f41a1c/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/12222321e7b62283a44a36aab09f20d2/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/b3a7ba4d3aace0de987a05497c1158ff/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/b970604daa17fb675f4baca7df3d0f98/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/0d86efcf66ddd5dfab891f9416ccd32e/AndroidManifest.xml:17:1-22:12
-MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/6ed4aba8bc61802a2f0e98a595b1167c/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/38dbe3f60cc8974569eef8d91dd2fd82/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/180f6e3ebfbe687c5c5b00d4636dacb9/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/ae06663e8314994d2426fc0917c67a7a/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/d7e7c5e88c97b5b93d40fb7da7987664/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/a2cf2bdde8c1a962c83c34d2fe395852/AndroidManifest.xml:2:1-13:12
-MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/bcd9d1425fc7180b6c7325ef3bf9c78d/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.react:react-native:0.59.9] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/40714369d83a46caab193454e67439db/AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/c666d8fe3cca81230dbff5816f67fcde/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/215141ba559d1d25464c76cdb3ed2932/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/2451f4a574d8276737b8f2dde9e5d703/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/af46abf705482186035c28a8dc880b11/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/e2011830763553cf6f001065a6497e52/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/8186929ed79ecb5371376bf47393b6ca/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/7e9af93e49233c9fc6b9e329803db734/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/4598fae883579a8e9dcdaa99e795609e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/9324fe2085d1f44aa265302bcdc91b7a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/be948c3f56d16ec082bf3dc95117a69b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/21c0a1822a5bd5da43428bbbe34e6f0f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/5fccbc69f97f6bdbe439e9c8fb2f80a8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/d45515a38efb172f8b6e8bccd0b8b86b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/8565fd1b838bd68d62378082443d7f51/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/8984dbfcb81e37b3c9a7042058f69ea9/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/b19002f7eb963bb06e213aa095c99587/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/4a0be6378a52c0e74b712589e613c50d/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/c74f7f1c91d158edc7fc804ce861c3a2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/c7d49d5ef59b0cf70738c1735fe90113/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/87402709eab07440517c45835aec6b50/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/1ec19332b2faef957037bcf179ab52d5/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/bcc7a51121e0bff6683cd84f46493a29/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/55024d4544aeb8c7095ec73259354467/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/d4acf5bc195f68396a15d35500560e3b/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/2841312b287b034996df75527d633ebc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/93f72568f8c6cf236a5da4ab4cb2baeb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/b4379db8118c17602aab9e35ebfb6a0d/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/6072ccd7d735af71c066ebdbcb69e457/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/68d54fc4d14164458d34e15ec2886bf2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/4aced55f9a9fcccb9931adb455d07456/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/35e4ec92923b057a943606bbe8e5a3e4/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/f064eaf92596648ec076dffb047e1290/AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/13faf92890798521d11982b77645b317/AndroidManifest.xml:2:1-9:12
 INJECTED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/debug/AndroidManifest.xml:2:1-8:12
 INJECTED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/debug/AndroidManifest.xml:2:1-8:12
 INJECTED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/debug/AndroidManifest.xml:2:1-8:12
@@ -53,13 +53,13 @@ INJECTED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/an
 		INJECTED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/debug/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:1:1-32:12
 		INJECTED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/debug/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/debug/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:1:1-32:12
 		INJECTED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:1:11-69
@@ -68,69 +68,76 @@ ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/andro
 	android:name
 		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:4:22-64
 application
-ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:6:5-24:19
-MERGED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:6:5-24:19
-MERGED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:6:5-24:19
+ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:6:5-30:19
+MERGED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:6:5-30:19
+MERGED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:6:5-30:19
 MERGED from [:realm] /Users/mauricioconde/Documents/React Native/proyecto/feel-React/node_modules/realm/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-20
 MERGED from [:realm] /Users/mauricioconde/Documents/React Native/proyecto/feel-React/node_modules/realm/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-20
-MERGED from [com.facebook.react:react-native:0.59.9] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/a0c3b44ebf38c8c6d715591b7b4b1fad/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.react:react-native:0.59.9] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/a0c3b44ebf38c8c6d715591b7b4b1fad/AndroidManifest.xml:11:5-20
-MERGED from [com.android.support:support-compat:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/a8f70fc5c28fb67df67822136bd3db1e/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/a8f70fc5c28fb67df67822136bd3db1e/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/2e60221319da728875602f963e1b0256/AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/2e60221319da728875602f963e1b0256/AndroidManifest.xml:22:5-23:19
-MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/a2cf2bdde8c1a962c83c34d2fe395852/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/a2cf2bdde8c1a962c83c34d2fe395852/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.59.9] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/40714369d83a46caab193454e67439db/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.59.9] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/40714369d83a46caab193454e67439db/AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/8984dbfcb81e37b3c9a7042058f69ea9/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/8984dbfcb81e37b3c9a7042058f69ea9/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/b19002f7eb963bb06e213aa095c99587/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/b19002f7eb963bb06e213aa095c99587/AndroidManifest.xml:22:5-23:19
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/f064eaf92596648ec076dffb047e1290/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/f064eaf92596648ec076dffb047e1290/AndroidManifest.xml:11:5-20
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/a8f70fc5c28fb67df67822136bd3db1e/AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/8984dbfcb81e37b3c9a7042058f69ea9/AndroidManifest.xml:22:18-91
 	android:label
 		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:8:7-39
 		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:8:7-39
 	tools:ignore
 		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/debug/AndroidManifest.xml:7:75-114
-	android:roundIcon
-		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:10:7-52
-		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:10:7-52
 	tools:targetApi
 		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/debug/AndroidManifest.xml:7:54-74
 	android:icon
 		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:9:7-41
 		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:9:7-41
 	android:allowBackup
-		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:11:7-34
-		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:11:7-34
+		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:10:7-34
+		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:10:7-34
 	android:theme
-		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:12:7-38
-		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:12:7-38
+		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:11:7-38
+		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:11:7-38
 	android:usesCleartextTraffic
 		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/debug/AndroidManifest.xml:7:18-53
 	android:name
 		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:7:7-38
 		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:7:7-38
-activity#com.feel.MainActivity
-ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:13:7-22:18
+activity#com.feel.SplashActivity
+ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:12:9-21:20
 	android:label
-		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:15:9-41
-	android:windowSoftInputMode
-		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:17:9-51
-	android:configChanges
-		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:16:9-79
+		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:16:13-45
+	android:theme
+		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:14:13-47
 	android:name
-		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:14:9-37
+		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:13:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:18:9-21:25
+ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:17:13-20:29
 action#android.intent.action.MAIN
-ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:19:13-65
+ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:19:21-62
+		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:20:13-73
+ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:19:17-77
 	android:name
-		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:20:23-70
+		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:19:27-74
+activity#com.feel.MainActivity
+ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:22:7-28:18
+	android:label
+		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:24:9-41
+	android:windowSoftInputMode
+		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:27:9-51
+	android:exported
+		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:25:11-34
+	android:configChanges
+		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:26:9-79
+	android:name
+		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:23:9-37
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:23:7-84
+ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:29:7-84
 	android:name
-		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:23:17-81
+		ADDED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml:29:17-81
 uses-sdk
 INJECTED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/main/AndroidManifest.xml
@@ -143,74 +150,74 @@ MERGED from [:realm] /Users/mauricioconde/Documents/React Native/proyecto/feel-R
 MERGED from [:realm] /Users/mauricioconde/Documents/React Native/proyecto/feel-React/node_modules/realm/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-gesture-handler] /Users/mauricioconde/Documents/React Native/proyecto/feel-React/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-gesture-handler] /Users/mauricioconde/Documents/React Native/proyecto/feel-React/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.59.9] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/a0c3b44ebf38c8c6d715591b7b4b1fad/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.59.9] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/a0c3b44ebf38c8c6d715591b7b4b1fad/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/b1bbeef62ebebb2c15d2d6a028910c7f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/b1bbeef62ebebb2c15d2d6a028910c7f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/2b4808fdf23c9ba712aed8d9b364c3ae/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/2b4808fdf23c9ba712aed8d9b364c3ae/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/0fdbd9a4c129ad080cb3e683e1380d53/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/0fdbd9a4c129ad080cb3e683e1380d53/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/7f10e64240bb9d300d37af51860c3834/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/7f10e64240bb9d300d37af51860c3834/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/b058ac9bd9d3e59e5f813476069c3336/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/b058ac9bd9d3e59e5f813476069c3336/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/23b7053ec0c5dcac0c1a066d2eba8369/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/23b7053ec0c5dcac0c1a066d2eba8369/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/d86838f5261d2d445bafad835381bc7e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/d86838f5261d2d445bafad835381bc7e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/6255f519100bf55d74e5865ebd6e6822/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/6255f519100bf55d74e5865ebd6e6822/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/fba3a9b277aa5b0b06f71a36f06c4087/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/fba3a9b277aa5b0b06f71a36f06c4087/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/66f58d0a22f8345527f6331ee1fcb7d4/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/66f58d0a22f8345527f6331ee1fcb7d4/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/24a82cbf5a73e6ea0de17477130b644e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/24a82cbf5a73e6ea0de17477130b644e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/b51297bdf227707c44c3f2d3ff87ad95/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/b51297bdf227707c44c3f2d3ff87ad95/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/9127fb23e97736aeaa034c12b37a5142/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/9127fb23e97736aeaa034c12b37a5142/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/ed069e1205305844341440be23333f96/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/ed069e1205305844341440be23333f96/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/a8f70fc5c28fb67df67822136bd3db1e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/a8f70fc5c28fb67df67822136bd3db1e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/2e60221319da728875602f963e1b0256/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/2e60221319da728875602f963e1b0256/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/3f429996b571c224a66353b7450be488/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/3f429996b571c224a66353b7450be488/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/282a8663be2e472352378dd510677e1f/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/282a8663be2e472352378dd510677e1f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/48a084369cc395ae1e73f94cf3b0311f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/48a084369cc395ae1e73f94cf3b0311f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/038da5c9406334010e51def44d201d23/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/038da5c9406334010e51def44d201d23/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/67504dedc60423e5597e6265cbbac54a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/67504dedc60423e5597e6265cbbac54a/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/de52e053afe02e992c984eff27f41a1c/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/de52e053afe02e992c984eff27f41a1c/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/12222321e7b62283a44a36aab09f20d2/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/12222321e7b62283a44a36aab09f20d2/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/b3a7ba4d3aace0de987a05497c1158ff/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/b3a7ba4d3aace0de987a05497c1158ff/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/b970604daa17fb675f4baca7df3d0f98/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/b970604daa17fb675f4baca7df3d0f98/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/0d86efcf66ddd5dfab891f9416ccd32e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/0d86efcf66ddd5dfab891f9416ccd32e/AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/6ed4aba8bc61802a2f0e98a595b1167c/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/6ed4aba8bc61802a2f0e98a595b1167c/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/38dbe3f60cc8974569eef8d91dd2fd82/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/38dbe3f60cc8974569eef8d91dd2fd82/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/180f6e3ebfbe687c5c5b00d4636dacb9/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/180f6e3ebfbe687c5c5b00d4636dacb9/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/ae06663e8314994d2426fc0917c67a7a/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/ae06663e8314994d2426fc0917c67a7a/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/d7e7c5e88c97b5b93d40fb7da7987664/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/d7e7c5e88c97b5b93d40fb7da7987664/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/a2cf2bdde8c1a962c83c34d2fe395852/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/a2cf2bdde8c1a962c83c34d2fe395852/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/bcd9d1425fc7180b6c7325ef3bf9c78d/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/bcd9d1425fc7180b6c7325ef3bf9c78d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.react:react-native:0.59.9] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/40714369d83a46caab193454e67439db/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.59.9] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/40714369d83a46caab193454e67439db/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/c666d8fe3cca81230dbff5816f67fcde/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/c666d8fe3cca81230dbff5816f67fcde/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/215141ba559d1d25464c76cdb3ed2932/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/215141ba559d1d25464c76cdb3ed2932/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/2451f4a574d8276737b8f2dde9e5d703/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/2451f4a574d8276737b8f2dde9e5d703/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/af46abf705482186035c28a8dc880b11/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/af46abf705482186035c28a8dc880b11/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/e2011830763553cf6f001065a6497e52/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/e2011830763553cf6f001065a6497e52/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/8186929ed79ecb5371376bf47393b6ca/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/8186929ed79ecb5371376bf47393b6ca/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/7e9af93e49233c9fc6b9e329803db734/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/7e9af93e49233c9fc6b9e329803db734/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/4598fae883579a8e9dcdaa99e795609e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/4598fae883579a8e9dcdaa99e795609e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/9324fe2085d1f44aa265302bcdc91b7a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/9324fe2085d1f44aa265302bcdc91b7a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/be948c3f56d16ec082bf3dc95117a69b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/be948c3f56d16ec082bf3dc95117a69b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/21c0a1822a5bd5da43428bbbe34e6f0f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/21c0a1822a5bd5da43428bbbe34e6f0f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/5fccbc69f97f6bdbe439e9c8fb2f80a8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/5fccbc69f97f6bdbe439e9c8fb2f80a8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/d45515a38efb172f8b6e8bccd0b8b86b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/d45515a38efb172f8b6e8bccd0b8b86b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/8565fd1b838bd68d62378082443d7f51/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/8565fd1b838bd68d62378082443d7f51/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/8984dbfcb81e37b3c9a7042058f69ea9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/8984dbfcb81e37b3c9a7042058f69ea9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/b19002f7eb963bb06e213aa095c99587/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/b19002f7eb963bb06e213aa095c99587/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/4a0be6378a52c0e74b712589e613c50d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/4a0be6378a52c0e74b712589e613c50d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/c74f7f1c91d158edc7fc804ce861c3a2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/c74f7f1c91d158edc7fc804ce861c3a2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/c7d49d5ef59b0cf70738c1735fe90113/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/c7d49d5ef59b0cf70738c1735fe90113/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/87402709eab07440517c45835aec6b50/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/87402709eab07440517c45835aec6b50/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/1ec19332b2faef957037bcf179ab52d5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/1ec19332b2faef957037bcf179ab52d5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/bcc7a51121e0bff6683cd84f46493a29/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/bcc7a51121e0bff6683cd84f46493a29/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/55024d4544aeb8c7095ec73259354467/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/55024d4544aeb8c7095ec73259354467/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/d4acf5bc195f68396a15d35500560e3b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/d4acf5bc195f68396a15d35500560e3b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/2841312b287b034996df75527d633ebc/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/2841312b287b034996df75527d633ebc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/93f72568f8c6cf236a5da4ab4cb2baeb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/93f72568f8c6cf236a5da4ab4cb2baeb/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/b4379db8118c17602aab9e35ebfb6a0d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/b4379db8118c17602aab9e35ebfb6a0d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/6072ccd7d735af71c066ebdbcb69e457/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/6072ccd7d735af71c066ebdbcb69e457/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/68d54fc4d14164458d34e15ec2886bf2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/68d54fc4d14164458d34e15ec2886bf2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/4aced55f9a9fcccb9931adb455d07456/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/4aced55f9a9fcccb9931adb455d07456/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/35e4ec92923b057a943606bbe8e5a3e4/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/35e4ec92923b057a943606bbe8e5a3e4/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/f064eaf92596648ec076dffb047e1290/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/f064eaf92596648ec076dffb047e1290/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/13faf92890798521d11982b77645b317/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/mauricioconde/.gradle/caches/transforms-2/files-2.1/13faf92890798521d11982b77645b317/AndroidManifest.xml:5:5-7:41
 INJECTED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/debug/AndroidManifest.xml
 INJECTED from /Users/mauricioconde/Documents/React Native/proyecto/feel-React/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
