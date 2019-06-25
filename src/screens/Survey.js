@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View, TouchableOpacity, StyleSheet, FlatList } from 'react-native';
+import { Text, View, TouchableOpacity, StyleSheet, FlatList, Animated, } from 'react-native';
 import { connect } from 'react-redux';
 import { answerQuestion, saveOption } from '../actions/survey';
 import { AppContainer, Spinner } from '../components/common';
@@ -78,7 +78,15 @@ class SurveyScreen extends Component {
   state = {
     questionIndex: 0,
     isLoading: false,
-    indexSelected: -1
+    indexSelected: -1,
+    animatedValue: new Animated.Value(0)
+  }
+  constructor(props) {
+    super(props)
+    this.delayValue = 800;
+  }
+  componentDidMount() {
+    this.setAnimation()
   }
 
   componentWillReceiveProps(nextProps) {
@@ -89,6 +97,9 @@ class SurveyScreen extends Component {
             questionIndex: 1,
             isLoading: false,
             indexSelected: -1,
+            animatedValue: new Animated.Value(0)
+          }, () => {
+            this.setAnimation()
           })
           break
         case 2:
@@ -96,6 +107,9 @@ class SurveyScreen extends Component {
             questionIndex: 2,
             isLoading: false,
             indexSelected: -1,
+            animatedValue: new Animated.Value(0)
+          }, () => {
+            this.setAnimation()
           })
           break
         case 3:
@@ -105,6 +119,14 @@ class SurveyScreen extends Component {
     }
   }
 
+  setAnimation = () => {
+    Animated.spring(this.state.animatedValue, {
+      toValue: 1,
+      tension: 20,
+      useNativeDriver: true
+    }).start();
+  }
+
   navigateToNextScreen = () => {
     this.props.navigation.navigate('ResultsScreen')
   };
@@ -112,7 +134,7 @@ class SurveyScreen extends Component {
   getEmotion = (item, index) => () => {
     this.setState({
       isLoading: true,
-      indexSelected: index
+      indexSelected: index,
     }, () => {
       this.props.saveOption(item.key)
       this.props.answerQuestion(item.text)
@@ -121,10 +143,17 @@ class SurveyScreen extends Component {
   };
 
   renderOption = ({ item, index }) => {
+    this.delayValue = this.delayValue + 500;
+    const translateX = this.state.animatedValue.interpolate({
+      inputRange: [0, 1],
+      outputRange: [this.delayValue, 1]
+    });
     return (
-      <TouchableOpacity key={index} style={styles.buttonStyle} onPress={this.getEmotion(item, index)}>
-        <Text style={styles.textOption}>{item.text}</Text>
-      </TouchableOpacity>
+      <Animated.View style={{ transform: [{ translateX }] }}>
+        <TouchableOpacity key={index} style={styles.buttonStyle} onPress={this.getEmotion(item, index)}>
+          <Text style={styles.textOption}>{item.text}</Text>
+        </TouchableOpacity>
+      </Animated.View>
     );
   };
 
