@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Text, View, TouchableOpacity, StyleSheet, FlatList } from 'react-native';
 import { connect } from 'react-redux';
 import { answerQuestion, saveOption } from '../actions/survey';
-import { AppContainer } from '../components/common';
+import { AppContainer, Spinner } from '../components/common';
 import { colors } from '../styles/colors';
 
 const survey = [
@@ -77,23 +77,33 @@ const survey = [
 class SurveyScreen extends Component {
   state = {
     questionIndex: 0,
-  }
-  testEmotion = () => {
-    //this.props.answerQuestion('I am gratefull you are ok')
-    this.props.searchPlaylist('happy', this.props.token)
+    isLoading: false,
+    indexSelected: -1
   }
 
-  getEmotion = item => () => {
+  getEmotion = (item, index) => () => {
+    this.setState(prevState => ({
+      isLoading: !prevState.isLoading,
+      indexSelected: prevState.indexSelected + 1 + index
+    }))
     this.props.saveOption(item.key)
     this.props.answerQuestion(item.text)
   };
 
   renderOption = ({ item, index }) => {
-    return (
-      <TouchableOpacity key={index} style={styles.buttonStyle} onPress={this.getEmotion(item)}>
-        <Text style={styles.textOption}>{item.text}</Text>
-      </TouchableOpacity>
-    );
+    if (this.state.isLoading && this.state.indexSelected == index) {
+      return (
+        <View key={index} style={styles.buttonStyle}>
+          <Spinner />
+        </View>
+      )
+    } else {
+      return (
+        <TouchableOpacity key={index} style={styles.buttonStyle} onPress={this.getEmotion(item, index)}>
+          <Text style={styles.textOption}>{item.text}</Text>
+        </TouchableOpacity>
+      );
+    }
   };
 
   navigateToNextScreen = () => {
@@ -104,12 +114,16 @@ class SurveyScreen extends Component {
     switch (nextProps.emotions.length) {
       case 1:
         this.setState({
-          questionIndex: 1
+          questionIndex: 1,
+          isLoading: false,
+          indexSelected: -1,
         })
         break
       case 2:
         this.setState({
-          questionIndex: 2
+          questionIndex: 2,
+          isLoading: false,
+          indexSelected: -1,
         })
         break
       case 3:
@@ -130,6 +144,7 @@ class SurveyScreen extends Component {
         <View style={{ flex: 1 }}>
           <Text style={styles.title}>{survey[this.state.questionIndex].question}</Text>
           <FlatList
+            extraData={this.state}
             contentContainerStyle={styles.listContent}
             data={survey[this.state.questionIndex].options}
             keyExtractor={(item, index) => {

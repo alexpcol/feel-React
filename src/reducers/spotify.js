@@ -4,7 +4,8 @@ const INITIAL_STATE = {
   playlists: [],
   playlistSelected: null,
   tracks: [],
-  
+  gotTracks: false,
+
 };
 
 export default (state = INITIAL_STATE, { type, payload } = {}) => {
@@ -14,15 +15,17 @@ export default (state = INITIAL_STATE, { type, payload } = {}) => {
         ...state,
         playlists: payload.playlists.items
       };
-    case GET_TRACKS: 
+    case GET_TRACKS:
       return {
         ...state,
-        tracks: payload.items
+        tracks: payload.items,
+        gotTracks: true
       }
     case PLAYLIST_SELECTED:
-      return{
+      return {
         ...state,
-        playlistSelected: payload
+        playlistSelected: payload,
+        gotTracks: false
       }
     default:
       return state;

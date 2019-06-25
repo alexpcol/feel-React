@@ -1,19 +1,19 @@
 import React from 'react';
 import { View, ActivityIndicator } from 'react-native';
+import { colors } from '../../styles/colors';
 
-const Spinner = ({ size = 'large' }) => {
+const Spinner = ({ size = 'large', color = colors.alabasterWhite }) => {
     return (
         <View style={styles.spinnerStyle}>
-            <ActivityIndicator size={size} />
+            <ActivityIndicator size={size} color={color} />
         </View>
     );
 };
 
 const styles = {
     spinnerStyle: {
-        flex: 1,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
     }
 };
 

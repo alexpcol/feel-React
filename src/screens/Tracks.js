@@ -7,8 +7,7 @@ import { colors } from '../styles/colors';
 
 class Tracks extends Component {
     state = {
-        isLoading: false,
-        emotions: []
+        isLoading: true,
     }
 
     componentWillMount() {
@@ -29,6 +28,22 @@ class Tracks extends Component {
             </TouchableOpacity>
         );
     };
+
+    renderList = () => {
+        const { tracks, gotTracks } = this.props
+        if (gotTracks) {
+            <FlatList
+                contentContainerStyle={styles.listContent}
+                data={tracks}
+                keyExtractor={(item, index) => {
+                    return `${item.track.id}_${item.added_at}`
+                }}
+                renderItem={this.renderOption}
+            />
+        } else {
+            <Spinner />
+        }
+    }
 
     render() {
         const { playlist, tracks } = this.props
@@ -66,6 +81,7 @@ function mapStateToProps(state) {
         tracksURL: state.spotify.playlistSelected.tracks.href,
         tracks: state.spotify.tracks,
         token: state.auth.token,
+        gotTracks: state.spotify.gotTracks,
     };
 }
 export default connect(mapStateToProps, {

@@ -29,7 +29,7 @@ class Login extends Component {
   renderButton = () => {
     if (this.state.isLoading) {
       return (
-        <Spinner />
+        <Spinner color={colors.gray} />
       )
     }
     return (
