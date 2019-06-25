@@ -22,7 +22,7 @@ class Tracks extends Component {
 
     renderOption = ({ item, index }) => {
         return (
-            <TouchableOpacity key={item.track.id} style={styles.buttonStyle} onPress={this.openTrack(item.track.external_urls.spotify)}>
+            <TouchableOpacity key={`${item.track.id}_${item.added_at}`} style={styles.buttonStyle} onPress={this.openTrack(item.track.external_urls.spotify)}>
                 <Image style={styles.image} source={{ uri: item.track.album.images[1].url }} />
                 <Text style={styles.textOption}>{item.track.name}</Text>
                 <Text style={styles.textOption}>{item.track.artists[0].name}</Text>
@@ -50,7 +50,7 @@ class Tracks extends Component {
                         contentContainerStyle={styles.listContent}
                         data={tracks}
                         keyExtractor={(item, index) => {
-                            return item.track.id
+                            return `${item.track.id}_${item.added_at}`
                         }}
                         renderItem={this.renderOption}
                     />
