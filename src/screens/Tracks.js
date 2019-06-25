@@ -31,11 +31,16 @@ class Tracks extends Component {
             <AppContainer
                 containerBackgroundColor={colors.cadetBlue}
                 headerText=""
+                showBackArrow={true}
                 headerTextColor={colors.alabasterWhite}
                 navigation={this.props.navigation}
             >
                 <View style={{ flex: 1 }}>
-                    <Text style={styles.title}>{playlist.name}</Text>
+                    <View style={{flexDirection:'row', justifyContent:'space-between'}}>
+                        <Text style={styles.title}>{playlist.name}</Text>
+                        <Image style={styles.mainImage} source={{ uri: playlist.images[0].url }} />
+                    </View>
+                    
                     <FlatList
                         contentContainerStyle={styles.listContent}
                         data={tracks}
@@ -67,6 +72,7 @@ const styles = StyleSheet.create({
         color: colors.alabasterWhite,
         fontWeight: 'bold',
         fontSize: 40,
+        width: 250
     },
     buttonStyle: {
         backgroundColor: colors.alabasterWhite,
@@ -83,6 +89,11 @@ const styles = StyleSheet.create({
     },
     listContent: {
         paddingVertical: 8
+    },
+    mainImage: {
+        height:100,
+        width: 100,
+        borderRadius: 10,
     },
     image: {
         height: 220,

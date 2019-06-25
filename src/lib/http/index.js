@@ -1,8 +1,6 @@
 import axios from 'axios';
 import qs from 'qs';
-import ConnectionHandler from '../../services/ConnectionHandler';
 import _Error from './Error';
-import RealmManager from '../../services/realm/realm';
 
 /*
  * Error handler
@@ -43,24 +41,9 @@ function errorHandler(err) {
   }
 }
 
-
-/**
- * HTTP Request
- *
- * @param {object} request - Request config
- * @param {string} request.method - HTTP Method
- * @param {string} request.url
- * @param {object} request.data - Optional data
- * @param {object} request.config - Request config
- * @param {boolean} request.config.form - If request must use form format -> Content-Type header
- * @param {string} [request.config.auth] - Request auth config -> Authorization header
- * @param {object} [request.config.headers] - Request headers
- */
 async function httpRequest(request) {
   const headers = { 'Content-Type': 'application/json', ...request.config.headers };
   let data = { ...request.data };
-
-  if (!ConnectionHandler.isConnected) throw new _Error('Offline', { type: 'NetworkError' });
 
   /* Config request */
   if (request.config.auth) {
@@ -121,18 +104,6 @@ async function httpRequest(request) {
       return errorHandler(e);
     }
   }
-}
-
-async function getAuthorizationToken() {
-  console.log('[Auth] getAuthorizationToken');
-  RealmManager.get('Session', (object) => {
-    let session = Array.from(object)[0]
-    this.setAuthorizationToken(`Bearer ${session.token}`)
-  })
-}
-
-async function setAuthorizationToken(token) {
-
 }
 
 function post(url, data, config = {}) {
